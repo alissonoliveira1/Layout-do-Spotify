@@ -9,7 +9,7 @@ html{
 }
 .principal{
 display: grid;
-grid-template-columns: 7% 63% 30%;
+grid-template-columns: 7% 60% 33%;
    
     
 }
@@ -349,19 +349,31 @@ html ::-webkit-scrollbar {
     width: 7vw;
   }
   .texto{
+    font-weight: bold;
     color: white;
   }
   .nome-canal{
+    font-weight: bold;
+    font-size: 20px;
     color: white;
   }
   .ouvintes{
     color: white;
   }
   .sobre{
+    
     color: white;
   }
   .pai-ouvintes{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+  }
+  .bnt-seguir button{
+    color: white;
+    display: flex;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid white;
+   padding: 5px 5px 5px 5px;
   }
