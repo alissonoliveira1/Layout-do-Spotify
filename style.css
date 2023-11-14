@@ -55,6 +55,9 @@ grid-template-columns: 7% 60% 33%;
 }
 
 .menu2{
+    border-radius: 9px;
+    overflow-y: auto;
+    height: 86vh;
     background: rgb(23,0,73);
 background: linear-gradient(180deg, rgba(23,0,73,1) 18%, rgba(2,0,36,1) 80%);
 }
@@ -75,6 +78,7 @@ background: linear-gradient(180deg, rgba(23,0,73,1) 18%, rgba(2,0,36,1) 80%);
     gap: 10px;
 }
 .prop{
+    margin: 20px;
     padding: 30px;
     box-shadow: inset 200px 10px 100px rgba(0, 0, 0, 0.5);
     color: aliceblue;
@@ -163,7 +167,7 @@ color: rgb(221, 221, 221);
     flex-direction: column;
     gap: 20px;
    overflow-y: scroll;
-   height: 56vh;
+   height: 57.4vh;
 }
 html ::-webkit-scrollbar {
     
@@ -187,7 +191,7 @@ html ::-webkit-scrollbar {
     position: fixed;
     width: 100vw;
     height: 13vh;
-    top:85vh;
+    top:87vh;
     color: aliceblue;
   }
   .capa-audio img{
@@ -226,8 +230,9 @@ html ::-webkit-scrollbar {
     font-size: 20px;
   }
   .plays{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
      border-radius: 50%;
      display: flex;
      justify-content: center;
@@ -304,7 +309,9 @@ html ::-webkit-scrollbar {
 
   .musicas{
      overflow-y: scroll;
-     height: 84vh;
+     gap: 10px;
+     border-radius: 9px;
+     height: 86vh;
     display: flex;
     flex-direction: column;
   
@@ -377,3 +384,60 @@ html ::-webkit-scrollbar {
     border: 1px solid white;
    padding: 5px 5px 5px 5px;
   }
+    .saudacao{
+        font-size: 25px;
+        font-weight: bolder;
+        margin-left: 20px;
+        color: white;
+    }
+    .saudacao2{
+        font-size: 23px;
+        display: flex;
+        font-weight: bolder;
+        margin: 40px 20px 40px;
+        color: white;
+    }
+    .lista-musica{
+     display: flex;
+     flex-flow: wrap;
+     gap: 7px;
+     margin: 20px 0 0 10px;
+    }
+    .music-capa {
+display: flex;
+align-items: center;
+    }
+    .music-capa img{
+   width: 3.4vw;
+    }
+    .listamusic{
+        
+        background-color:rgba(255, 255, 255, 0.096) ;
+        width: 19vw;
+    }
+    .titulo-musica{
+        font-size: 14px;
+        color: white;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+    .img-daily img{
+     width: 11vw;
+    }
+    .daily-pai{
+        display: flex;
+        justify-content: space-around;
+    }
+    .daily{
+        padding: 15px;
+        border-radius: 9px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+    }
+    .descricao2{
+        color: rgb(156, 156, 156);
+        font-size: 12px;
+        font-weight: 600;
+        width: 11vw;
+    }
