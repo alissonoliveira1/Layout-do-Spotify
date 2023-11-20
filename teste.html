@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="teste.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="audio-container">
+        <audio id="audio" autoplay src="musica/01 7 rings.mp3"></audio>
+        <progress class="progress-bar" id="progressBar" value="0" max="100"></progress>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    var audio = document.getElementById('audio');
+    var progressBar = document.getElementById('progressBar');
+
+    // Atualiza a barra de progresso com base no tempo atual da música
+    audio.addEventListener('timeupdate', function () {
+        var percentage = (audio.currentTime / audio.duration) * 100;
+        progressBar.value = percentage;
+    });
+
+    // Atualiza o tempo da música com base na posição clicada na barra de progresso
+    progressBar.addEventListener('click', function (e) {
+        var clickX = e.clientX - progressBar.getBoundingClientRect().left;
+        var percentage = (clickX / progressBar.clientWidth) * 100;
+        audio.currentTime = (percentage / 100) * audio.duration;
+    });
+});
+    </script>
+</body>
+</html>

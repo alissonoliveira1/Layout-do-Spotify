@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.audio-container {
+    width: 300px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #4CAF50;
+}
